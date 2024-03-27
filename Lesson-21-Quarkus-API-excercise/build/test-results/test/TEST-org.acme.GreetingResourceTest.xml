@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.acme.GreetingResourceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-01-31T09:16:09" hostname="PC01" time="2.544">
+  <properties/>
+  <testcase name="testHelloEndpoint()" classname="org.acme.GreetingResourceTest" time="2.544">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Response body doesn't match expectation.&#10;Expected: is &quot;Hello from RESTEasy Reactive&quot;&#10;  Actual: Hello from RESTEasy Reactive[Person{id=1, name='Some test person1', age=83}, Person{id=2, name='Some test person2', age=60}, Person{id=3, name='Some test person3', age=18}, Person{id=4, name='Some test person', age=44}]&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: is &quot;Hello from RESTEasy Reactive&quot;
+  Actual: Hello from RESTEasy Reactive[Person{id=1, name='Some test person1', age=83}, Person{id=2, name='Some test person2', age=60}, Person{id=3, name='Some test person3', age=18}, Person{id=4, name='Some test person', age=44}]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at org.acme.GreetingResourceTest.testHelloEndpoint(GreetingResourceTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.quarkus.test.junit.QuarkusTestExtension.runExtensionMethod(QuarkusTestExtension.java:1013)
+	at io.quarkus.test.junit.QuarkusTestExtension.interceptTestMethod(QuarkusTestExtension.java:827)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <system-out><![CDATA[2024-01-31 10:16:06,265 INFO  [org.apa.myf.web.MyFacesContainerInitializer] (Test worker) Using org.apache.myfaces.webapp.MyFacesContainerInitializer
+2024-01-31 10:16:06,776 INFO  [org.apa.myf.uti.ExternalSpecifications] (Test worker) MyFaces Core Bean Validation support disabled
+2024-01-31 10:16:06,834 INFO  [org.apa.myf.uti.ExternalSpecifications] (Test worker) MyFaces Core CDI support enabled
+2024-01-31 10:16:06,851 INFO  [org.pri.web.PostConstructApplicationEventListener] (Test worker) Running on PrimeFaces 13.0.5
+2024-01-31 10:16:06,851 WARNING [org.apa.myf.web.FacesInitializerImpl] (Test worker) 
+
+********************************************************************
+*** WARNING: Apache MyFaces Core is running in SYSTEMTEST mode.  ***
+***                                            ^^^^^^^^^^        ***
+*** Do NOT deploy to your live server(s) without changing this.  ***
+*** See Application#getProjectStage() for more information.      ***
+********************************************************************
+
+
+2024-01-31 10:16:06,866 INFO  [org.apa.myf.web.FacesInitializerImpl] (Test worker) MyFaces Core has started, it took [591] ms.
+2024-01-31 10:16:08,936 INFO  [io.quarkus] (Test worker) code-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.6.6) started in 12.367s. Listening on: http://localhost:8081
+2024-01-31 10:16:08,936 INFO  [io.quarkus] (Test worker) Profile test activated. 
+2024-01-31 10:16:08,936 INFO  [io.quarkus] (Test worker) Installed features: [agroal, awt, cdi, hibernate-orm, hibernate-orm-panache, itext, jdbc-mysql, myfaces, narayana-jta, poi, primefaces, resteasy-reactive, resteasy-reactive-jackson, servlet, smallrye-context-propagation, vertx, websockets, websockets-client]
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.age,
+        p1_0.name 
+    from
+        `test-person-table` p1_0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
